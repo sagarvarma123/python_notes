@@ -1,0 +1,72 @@
+body{
+    background-color: #FEEBF6;
+    text-align: center;
+    border: 5px solid #000957;
+    margin: 20px;
+    padding: 15px;
+    
+}
+
+.scroll-text p{
+    width: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: xx-large;
+    font-style: italic;
+    color: blue;
+    border: blue;
+}
+h2{
+    font-size: x-large;
+    font-style: initial;
+    color: #7D0A0A;
+
+}
+
+img{
+    border: 5px solid #5B913B;
+}
+
+name{
+    font-size: medium;
+    font-style:oblique;
+    font-weight: 200;
+    margin-right: 100 px;
+    color: red;
+}
+h3{
+    font-size: xx-large;
+    font-style: unset;
+    color: #123458;
+}
+h4{
+    font-size: x-small;
+    font-style: unset;
+    color: #7D0A0A;
+}
+p{
+    font-size: larger;
+    font-style: normal;
+    color: #113F67;
+}
+
+body ::before{
+    content: "Sagar";
+      position: fixed;
+      top: 500;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 60px;
+      color: rgba(0,0,0,0.08);
+      white-space: pre;
+      transform: rotate(-30deg);
+      z-index: -1;
+      pointer-events: none;
+
+}
