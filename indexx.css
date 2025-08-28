@@ -70,3 +70,9 @@ body ::before{
       pointer-events: none;
 
 }
+a{
+    color: rgb(60, 0, 255);
+    font-size: medium;
+    font-style: inherit;
+    border: 2px solid rgb(98, 0, 255);
+}
