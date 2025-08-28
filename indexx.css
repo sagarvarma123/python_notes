@@ -45,9 +45,10 @@ h3{
     color: #123458;
 }
 h4{
-    font-size: x-small;
+    font-size: medium;
     font-style: unset;
-    color: #7D0A0A;
+    color: #DC3C22;
+    border: 2px solid blueviolet;
 }
 p{
     font-size: larger;
@@ -56,7 +57,7 @@ p{
 }
 
 body ::before{
-    content: "Sagar";
+    content: " Sagar";
       position: fixed;
       top: 500;
       left: 0;
@@ -75,4 +76,11 @@ a{
     font-size: medium;
     font-style: inherit;
     border: 2px solid rgb(98, 0, 255);
+}
+
+h5{
+    font-size: small;
+    font-style: var(scroll-text);
+    color: #FF0066;
+
 }
