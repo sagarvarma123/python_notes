@@ -81,6 +81,13 @@ a{
 h5{
     font-size: small;
     font-style: var(scroll-text);
-    color: #FF0066;
+    color: #0d00ff;
 
+}
+
+intro{
+    font-size: medium;
+    font-style: oblique;
+    color: #3108d9;
+    border: none;
 }
