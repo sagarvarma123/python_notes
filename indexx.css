@@ -1,93 +1,110 @@
-body{
-    background-color: #FEEBF6;
+/* General Body */
+body {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
     text-align: center;
     border: 5px solid #000957;
     margin: 20px;
     padding: 15px;
-    
+    font-family: Arial, sans-serif;
 }
 
-.scroll-text p{
-    width: 100;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-
-h1{
-    font-size: xx-large;
+/* Heading */
+h1 {
+    font-size: 2.5rem;
     font-style: italic;
-    color: blue;
-    border: blue;
+    color: #003399;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
-h2{
-    font-size: x-large;
-    font-style: initial;
+
+h2 {
+    font-size: 1.5rem;
     color: #7D0A0A;
-
+    margin-top: 25px;
+    text-decoration: underline;
 }
 
-img{
-    border: 5px solid #5B913B;
+/* QR Images */
+img {
+    border: 4px solid #5B913B;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
 }
 
-name{
-    font-size: medium;
-    font-style:oblique;
-    font-weight: 200;
-    margin-right: 100 px;
-    color: red;
+/* Notes Links */
+a {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding: 8px 15px;
+    color: #fff;
+    background: #6200ff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
 }
-h3{
-    font-size: xx-large;
-    font-style: unset;
-    color: #123458;
+a:hover {
+    background: #4500b5;
 }
-h4{
-    font-size: medium;
-    font-style: unset;
-    color: #DC3C22;
-    border: 2px solid blueviolet;
-}
-p{
-    font-size: larger;
-    font-style: normal;
+
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
     color: #113F67;
+    line-height: 1.6;
 }
 
-body ::before{
-    content: " Sagar";
-      position: fixed;
-      top: 500;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font-size: 60px;
-      color: rgba(0,0,0,0.08);
-      white-space: pre;
-      transform: rotate(-30deg);
-      z-index: -1;
-      pointer-events: none;
-
-}
-a{
-    color: rgb(60, 0, 255);
-    font-size: medium;
-    font-style: inherit;
-    border: 2px solid rgb(98, 0, 255);
+/* Highlight Name */
+.name {
+    font-size: 1rem;
+    font-style: italic;
+    color: red;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff3f3;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-h5{
-    font-size: small;
-    font-style: var(scroll-text);
+/* Next Units */
+h3 {
+    font-size: 1.8rem;
+    color: #123458;
+    margin: 30px 0 15px 0;
+}
+
+/* Footer / Contact Card */
+div[style] {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: #ffe4f2 !important;
+}
+
+/* Watermark Background */
+body::before {
+    content: "Sagar Kumar Varma";
+    position: fixed;
+    top: 40%;
+    left: 10%;
+    font-size: 70px;
+    color: rgba(0,0,0,0.05);
+    transform: rotate(-30deg);
+    z-index: -1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Creator Intro */
+.intro h5 a {
+    font-size: 0.9rem;
     color: #0d00ff;
-
+    text-decoration: none;
 }
-
-intro{
-    font-size: medium;
-    font-style: oblique;
-    color: #3108d9;
-    border: none;
+.intro h5 a:hover {
+    text-decoration: underline;
 }
