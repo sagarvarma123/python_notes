@@ -113,9 +113,27 @@
     <div class="motivate">
         <p>>>>>>>>><i>"Sharing knoweledge is the first step towards success, and learning together makes the journey even brighter.">>>>>>>></i></p>
     </div>
-    <div class ="intro">
-        <h5><a href="https://online.flippingbook.com/view/47502421/"><i>Created with ❤️ by Sagar Kumar varma💕💕</i></a></em></h5>
-    </div>
+   <!-- Clickable Name -->
+  <div class="name" onclick="showDetails()">>> Created with❤️ Sagar 💕</div>
+
+  <!-- Hidden Details -->
+  <div class="details" id="profileDetails">
+    <img src="sagar varma22222.jpg" alt="Profile Photo">
+    <h3>Sagar Kumar Varma</h3>
+    <p>Role: Admin & Developer</p>
+    <p>Student: Computer Engineering & Application</p>
+  </div>
+
+  <script>
+    function showDetails(){
+      let box = document.getElementById("profileDetails");
+      if(box.style.display === "block"){
+        box.style.display = "none";   // hide again
+      } else {
+        box.style.display = "block";  // show
+      }
+    }
+  </script>
 
     
     <!-- Contact Section -->
